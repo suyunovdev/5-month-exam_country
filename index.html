@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./scss/filter.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="start">
+          <div class="pages">
+            <h3>Where in the world?</h3>
+          </div>
+          <div class="darkmode">
+            <img src="./images/moom2.svg" id="icon" />
+            <p>Dark Mode</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="modal"></div>
+    <main>
+      <div class="container">
+        <div class="input">
+          <input
+            type="search"
+            placeholder="Search for a country…"
+            class="inputVal"
+          />
+          <img src="../images/search2.svg" alt="search" />
+        </div>
+        <select id="region-select">
+          <option value="">Select a region</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+      </select>
+  
+      <div id="country-details"></div>
+      </div>
+      <div class="products container"></div>
+    </main>
+    <script src="./js/filter.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

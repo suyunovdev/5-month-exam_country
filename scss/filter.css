@@ -1,0 +1,26 @@
+.region {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.region .card {
+  width: 267px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.031372549);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  padding: 10px;
+}
+.region .card img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.region .card h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+.region .card p {
+  margin: 5px 0;
+}/*# sourceMappingURL=filter.css.map */

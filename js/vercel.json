@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://restcountries.com/v3.1/all"
+    }
+  ],
+  "env": {
+    "API_KEY": "your-api-key"
+  }
+}

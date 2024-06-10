@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+a {
+  text-decoration: none;
+}
+
+.dark-theme {
+  --primary-color: #2b3844;
+  --secondary-color: #fff;
+  --tertiary-color: #202c36;
+}
+.dark-theme .header {
+  background-color: var(--primary-color);
+}
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 10000;
+}
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px;
+  transition: 0.4s;
+  max-width: 1280px;
+  box-shadow: 0px 2px 4px 0px #0000000e;
+
+  .pages {
+    font-weight: 800;
+    color: var(--secondary-color);
+  }
+  .darcmode {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    #icon {
+      cursor: pointer;
+    }
+    #icon img {
+      color: var(--tertiary-color);
+    }
+    color: var(--secondary-color);
+  }
+}
+#details-container {
+  display: flex;
+  align-items: center;
+  //   justify-content: space-around;
+  padding: 180px;
+  margin-left: -50px;
+  background-color: var(--tertiary-color);
+  .words {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .words1 {
+    display: flex;
+
+    .word1 {
+      display: flex;
+      flex-direction: column;
+      font-weight: 500;
+      color: var(--secondary-color);
+      font-size: 15px;
+      margin-top: 100px;
+      gap: 5px;
+      margin-left: 70px;
+      .word1 img {
+        border-radius: 50%;
+      }
+    }
+    .word2 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 145px;
+      margin-left: 80px;
+      color: var(--secondary-color);
+      gap: 5px;
+
+      .word2 p {
+        font-family: Nunito Sans;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: left;
+        width: 250px;
+        height: 96px;
+      }
+    }
+  }
+  .ones {
+    margin-left: 70px;
+    margin-top: 30px;
+    color: var(--secondary-color);
+  }
+}
+.btn {
+  margin-top: 140px;
+  margin-left: 150px;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 136px;
+    height: 40px;
+    opacity: 0px;
+    box-shadow: 0px 0px 7px 0px #0000004b;
+    border: none !important;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  a {
+    color: var(--secondary-color);
+  }
+}
